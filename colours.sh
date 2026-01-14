@@ -54,12 +54,12 @@ test_colors() {
 
     for NAME in "${COLORS[@]}"; do
         NORM=${!NAME};
-	BOLD="b$NAME"; BOLD=${!BOLD};
-	ITAL="i$NAME"; ITAL=${!ITAL}
+        BOLD="b$NAME"; BOLD=${!BOLD};
+        ITAL="i$NAME"; ITAL=${!ITAL}
         UNDR="u$NAME"; UNDR=${!UNDR};
-	BGC="bg$NAME"; BGC=${!BGC};
-	HFG="h$NAME"; HFG=${!HFG};
-	HBGC="hbg$NAME"; HBGC=${!HBGC};
+        BGC="bg$NAME"; BGC=${!BGC};
+        HFG="h$NAME"; HFG=${!HFG};
+        HBGC="hbg$NAME"; HBGC=${!HBGC};
 
         printf "%-8s " "$NAME"
         printf "${NORM}%-4s${RESET} " "Text"
